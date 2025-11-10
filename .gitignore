@@ -1,0 +1,7 @@
+/Ecos-backend/.env
+/Ecos-backend/node_modules/
+/Ecos-backend/dist/
+# --- IGNORE ---
+# docs --- IGNORE ---
+
+/docs
