@@ -70,29 +70,6 @@ export const routes: Routes = [
         (m) => m.DescriptionComponent
       ),
   },
-
-  {
-    path: 'informacion',
-    loadComponent: () =>
-      import(
-        './components/tarot/additional-info/additional-info.component'
-      ).then((m) => m.AdditionalInfoComponent),
-  },
-  {
-    path: 'agradecimiento',
-    loadComponent: () =>
-      import('./components/tarot/agradecimiento/agradecimiento.component').then(
-        (m) => m.AgradecimientoComponent
-      ),
-  },
-
-  {
-    path: 'terminos-y-condiciones',
-    loadComponent: () =>
-      import(
-        './components/tarot/terminos-condiciones/terminos-condiciones.component'
-      ).then((m) => m.TerminosCondicionesComponent),
-  },
   {
     path: 'tabla-nacimiento',
     loadComponent: () =>
