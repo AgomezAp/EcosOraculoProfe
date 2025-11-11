@@ -56,6 +56,44 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'cartas/:theme',
+    loadComponent: () =>
+      import('./components/tarot/cards/cards.component').then(
+        (m) => m.CardsComponent
+      ),
+  },
+
+  {
+    path: 'descripcion-cartas',
+    loadComponent: () =>
+      import('./components/tarot/description/description.component').then(
+        (m) => m.DescriptionComponent
+      ),
+  },
+
+  {
+    path: 'informacion',
+    loadComponent: () =>
+      import(
+        './components/tarot/additional-info/additional-info.component'
+      ).then((m) => m.AdditionalInfoComponent),
+  },
+  {
+    path: 'agradecimiento',
+    loadComponent: () =>
+      import('./components/tarot/agradecimiento/agradecimiento.component').then(
+        (m) => m.AgradecimientoComponent
+      ),
+  },
+
+  {
+    path: 'terminos-y-condiciones',
+    loadComponent: () =>
+      import(
+        './components/tarot/terminos-condiciones/terminos-condiciones.component'
+      ).then((m) => m.TerminosCondicionesComponent),
+  },
+  {
     path: 'tabla-nacimiento',
     loadComponent: () =>
       import('./components/tabla-nacimiento/tabla-nacimiento.component').then(
